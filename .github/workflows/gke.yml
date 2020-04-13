@@ -53,7 +53,7 @@ jobs:
     - name: Build
       run: |        
         docker build -t "$REGISTRY_HOSTNAME"/"$GKE_PROJECT"/"$IMAGE":"$GITHUB_SHA" \
-          -t "$REGISTRY_HOSTNAME"/"$GKE_PROJECT"/"$IMAGE":"$LATEST"
+          -t "$REGISTRY_HOSTNAME"/"$GKE_PROJECT"/"$IMAGE":"$LATEST" \
           --build-arg GITHUB_SHA="$GITHUB_SHA" \
           --build-arg GITHUB_REF="$GITHUB_REF" .
 
