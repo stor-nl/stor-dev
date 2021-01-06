@@ -1,0 +1,18 @@
+title: Stor
+description: >-
+  Stor - Based in the Netherlands
+author: Tijmen Stor
+baseurl: ""
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
